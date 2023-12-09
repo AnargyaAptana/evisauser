@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/faceCaptureRootLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <include
+        android:id="@+id/tabBar"
+        layout="@layout/detail_sw_action_bar_camera" />
+
+    <com.otaliastudios.cameraview.CameraView
+        android:id="@+id/camera"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/tabBar"
+        android:keepScreenOn="true"
+        app:cameraAudio="off"
+        app:cameraFacing="front"
+        app:cameraPlaySounds="false"
+        app:cameraRequestPermissions="false">
+
+
+        <ai.seventhsense.faceidentificationdemo.ui.FaceRegionOverlay
+            android:id="@+id/faceRegionOverlay"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+
+            />
+
+
+    </com.otaliastudios.cameraview.CameraView>
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tabBar"
+        android:layout_alignParentEnd="true"
+        android:layout_centerVertical="true"
+        android:layout_marginHorizontal="24dp"
+        android:orientation="vertical">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="30dp" />
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/ivSwitchCamera"
+            android:layout_width="90dp"
+            android:layout_height="90dp"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:background="@color/colorTransparent"
+            android:paddingTop="25dp"
+            android:paddingBottom="15dp"
+            android:src="@drawable/switchcamera" />
+
+        <LinearLayout
+            android:layout_width="39dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:orientation="vertical"
+            android:visibility="visible">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="@color/colorCameraBackground"
+                android:orientation="vertical">
+
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_zoom_in" />
+
+                <FrameLayout
+                    android:layout_width="40dp"
+                    android:layout_height="250dp"
+                    android:layout_gravity="center"
+                    android:orientation="vertical">
+
+                    <SeekBar
+                        android:id="@+id/sbZoom"
+                        android:layout_width="250dp"
+                        android:layout_height="42dp"
+                        android:layout_gravity="center"
+                        android:rotation="270" />
+                </FrameLayout>
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_zoom_out" />
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        <androidx.appcompat.widget.AppCompatImageButton
+            android:id="@+id/ibTakePicture"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:background="@color/colorTransparent"
+            android:foreground="?android:attr/selectableItemBackground"
+            android:padding="25dp"
+            android:src="@drawable/camera_button" />
+
+    </LinearLayout>
+
+
+</RelativeLayout>

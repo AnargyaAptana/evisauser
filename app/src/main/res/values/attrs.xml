@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="CircleImageView">
+        <attr format="dimension" name="civ_border_width"/>
+        <attr format="color" name="civ_border_color"/>
+        <attr format="boolean" name="civ_border_overlay"/>
+        <attr format="color" name="civ_circle_background_color"/>
+    </declare-styleable>
+
+
+    <declare-styleable name="FaceRegionOverlay">
+        <attr format="color" name="face_outer_border_color"/>
+        <attr format="dimension" name="face_border_width"/>
+    </declare-styleable>
+
+    <declare-styleable name="GifImageView">
+        <attr format="dimension" name="image_resource"></attr>
+    </declare-styleable>
+</resources>

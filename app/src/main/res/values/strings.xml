@@ -1,0 +1,184 @@
+<resources>
+    <string name="app_name">E Visa</string>
+    <string name="permissions_needed">Camera and disk write permissions are needed to capture images</string>
+    <string name="settings">Settings</string>
+    <string name="cancel">Cancel</string>
+    <string name="retry">Retry</string>
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+    <string name="connecting">Loading SDK in progress</string>
+    <string name="connecting_detail">Please wait while loading Face Recognition Model SDK</string>
+    <string name="error">Error</string>
+    <string name="unexpected_error">Unexpected Error</string>
+    <string name="unexpected_detail">An unexpected error occurred. Please retry the operation later.</string>
+    *
+    <string name="sensecrypt_fd_model">SenseCrypt Face Detection Model downloading in progress.</string>
+    *
+    <string name="sensecrypt_fr_model">SenseCrypt Face Recognition Model downloading in progress.</string>
+    <string name="invalid_key">Invalid Key</string>
+    <string name="senseprint_not_match_with_password">Provided password or face do not match with SensePrint.</string>
+    <string name="senseprint_not_match_without_password">Provided face does not match with SensePrint.</string>
+    <string name="acess_key_in_use">Access Key in use</string>
+    <string name="activating_access_key">Activating Access Key</string>
+    <string name="invalid_key_detail">Access key provided is invalid. Please try again. </string>
+    <string name="checking_access_key">Verification in progress</string>
+    <string name="network_error">Network Error</string>
+    <string name="checking_access_key_network_error">Please restore network connectivity to continue.</string>
+
+    <string name="download_activity_activating">Activating SDK</string>
+    <string name="download_activity_activating_detail">This process won\'t take long, and once it\'s done, you\'ll be able to use its powerful capabilities!</string>
+    <string name="download_activity_download_in_progress">Download in progress</string>
+    *
+    <string name="loading_detail">Loading SDK...</string>
+    *
+    <string name="license_check">License Check Failed</string>
+    *
+    <string name="license_check_detail">Could not connect to server to verify your license. Please restore network connectivity to continue.</string>
+    *
+    *
+    *
+    <string name="network_error_detail">There was an error while downloading the model. Please restore network connectivity to retry.</string>
+    *
+    *
+    <string name="access_key_previously_used_detail">Please deactivate the Access Key on the other device or request a new key from your system administrator.</string>
+    <string name="access_key_invalid">Invalid Key</string>
+    <string name="access_key_is_re">Access Key is required</string>
+    <string name="access_key">Access Key</string>
+    <string name="access_key_lower_cap">Access key</string>
+    *
+    <string name="access_key_short">Access Key provided is too short</string>
+    <string name="access_key_long">Access Key is too long</string>
+    <string name="deactivate">Deactivate</string>
+    *
+    <string name="deactivate_detail">"Once deactivated you will need to enter an Access Key again to use the SDK. Continue?"</string>
+    <string name="deactivate_network_err">To continue deactivation, please restore network connectivity.</string>
+    <string name="generating_qr_in_progress">QR generation in progress</string>
+    <string name="no_faces_detected">No faces detected</string>
+    *
+    <string name="license_expired">License Expired</string>
+    <string name="license_expired_detail">Your license has expired. Please contact your system administrator.</string>
+    <string name="key_password">Enter Password</string>
+    <string name="please_contact_administrator"> Please contact your system administrator to continue.</string>
+    <string name="place_qr_insdie_frame">Scan QR</string>
+    <string name="camera_permission">Camera permission is required to scan Qr code</string>
+    <string name="enter_password">Enter password</string>
+    <string name="nationality">Nationality/Citizenship</string>
+    <string name="select_birth_date">Date Of Birth</string>
+    <string name="date_of_birth">Date Of Birth</string>
+    <string name="detection_face_in_progress">Face Detection in Progress</string>
+    <string name="address">Address</string>
+    <string name="select_date_of_issue">Date Of Issue</string>
+    <string name="id">Id</string>
+    <string name="upper_case_id">ID</string>
+
+    <string name="face_too_close">Unsuitable image detected. Face is too close.</string>
+    <string name="face_too_close_border">Unsuitable image detected. Please ensure your face is centred and fully visible.</string>
+    <string name="face_cropped">Unsuitable image detected. Please ensure your face is centred and fully visible.</string>
+    <string name="face_not_found">Unsuitable image detected. Face not found.</string>
+    <string name="face_too_many_faces">>Unsuitable image detected. Too many faces.</string>
+    <string name="face_too_small">Unsuitable face detected. Face is too small.</string>
+    <string name="face_angle_too_large">Unsuitable face detected. Face angle too large. Please look at the camera.</string>
+    <string name="failed_to_read_image">Failed to read image</string>
+    <string name="failed_to_write_image">Failed to write image</string>
+    <string name="failed_to_read_model">Failed to read model</string>
+    <string name="failed_to_build_inter">Failed to build interpreter</string>
+    <string name="failed_to_invoke_inter">Failed to invoke interpreter</string>
+    <string name="failed_to_allocate">Failed to allocate</string>
+    <string name="invalid_config">Invalid config</string>
+    <string name="no_such_object_in_build">No such object is build</string>
+    <string name="failed_to_preprocess_predict">Failed to preprocess image while predict</string>
+    <string name="failed_to_preprocess_detect">Failed to preprocess image while detect</string>
+    <string name="failed_to_predict_landmarks">Unsuitable face detected. Face Scan was not clear.</string>
+    <string name="invalid_fuse_mode">Invalid fuse mode</string>
+    <string name="nullptr"></string>
+    <string name="license_error">License Error</string>
+    <string name="invalid_neta">Invalid meta</string>
+    <string name="unknown">Unknown</string>
+    <string name="Ok">Ok</string>
+    <string name="face_is_occluded">Unsuitable face detected. Please remove mask and glasses.</string>
+    <string name="failed_to_fetch_decryption">Failed to fetch coreml decryption key</string>
+    <string name="eyes_closed">Unsuitable face detected. Please open your eyes.</string>
+    <string name="save_qr">Save QR</string>
+    <string name="enter_id">ID*</string>
+    <string name="enter_name">Name</string>
+    <string name="next">Next</string>
+    <string name="enter_nationality">Nationality</string>
+    <string name="name">Name</string>
+    <string name="sex">Sex</string>
+    <string name="storage_err">Storage Error</string>
+    <string name="server_busy">Server is busy...</string>
+    <string name="scanning_qr_code">Scanning Qr code</string>
+    <string name="server_busy_detail">Too many people downloading at the same time. Please click on the retry button after a few minutes.</string>
+    <string name="storage_err_detail">There was an error saving the model on the device. Please check free storage to retry.</string>
+    <string name="date_of_issue">Date of Issue</string>
+    <string name="scanning_qr">Scanning Qr</string>
+    <string name="dob">dob</string>
+    <string name="invalid_qr">Invalid QR code</string>
+    <string name="multiple_faces_included">Multiple faces are detected</string>
+    <string name="password">Password</string>
+    <string name="access_key_screen_title">Please obtain an Access Key from your organisation\'s system administrator</string>
+    <string name="expiration">License Expiration</string>
+    <string name="ellipses">...</string>
+    <string name="verification_failed">Verification Failed</string>
+    <string name="verification_success">Verification Successful</string>
+    <string name="success">QR Saved</string>
+    <string name="qr_image_is_successfully_saved_into_gallery">QR image is successfully saved into device\'s gallery.</string>
+    <string name="user_limit_exceeded">User Limit Exceeded</string>
+    <string name="continue_string">Continue</string>
+    <string name="gender">Gender</string>
+    <string-array name="gender">
+        <item>Gender</item>
+        <item>Female</item>
+        <item>Male</item>
+    </string-array>
+    <string name="liveness_failed_title">Liveness Check Failed</string>
+    <string name="liveness_failed">Unsuitable face detected. Please ensure an authentic and clear face scan.</string>
+    <string name="unsuitable_capture_occlusion">Please retake the photo. Subject must remove mask and glasses.</string>
+    <string name="unsuitable_capture_too_close">Please retake the photo. Subject face is too large.</string>
+    <string name="unsuitable_capture_not_centered">Please retake the photo. Subject face is not centered.</string>
+    <string name="unsuitable_capture_too_far">Please retake the photo. Subject face is too small.</string>
+    <string name="unsuitable_capture_pitch_yaw">Please retake the photo. Subject face is not frontal.</string>
+    <string name="unsuitable_capture_eyes_not_open">Please retake the photo. Subject eyes are not open.</string>
+    <string name="unsuitable_capture_quality_too_low">Please retake the photo. Try to avoid camera shake.</string>
+    <string name="unsuitable_capture_no_face_detected">Please retake the photo. No face detected.</string>
+    <string name="unsuitable_capture_too_many_faces_detected">Please retake the photo. Photo must contain only one face.</string>
+
+    <string name="face_quality_no_face_detected">No face detected</string>
+    <string name="face_quality_too_many_faces">Too many faces detected</string>
+    <string name="face_quality_yaw_too_left">Please look slightly right</string>
+    <string name="face_quality_yaw_too_right">Please look slightly left</string>
+    <string name="face_quality_too_far">Please move closer</string>
+    <string name="face_quality_center_face">Please center your face</string>
+    <string name="face_quality_face_occluded">Please remove mask or glasses</string>
+    <string name="face_quality_pitch_too_high">Please look slightly down</string>
+    <string name="face_quality_pitch_too_low">Please look slightly up</string>
+    <string name="face_quality_too_close">Please move slightly away</string>
+    <string name="face_quality_eyes_closed">Please open your eyes</string>
+    <string name="face_quality_quality_low">Please stay still</string>
+    <string name="face_quality_quality_ok">Capturing. Stay Still.</string>
+    <string name="face_capture_message">Please stay still. Capturing</string>
+    <string name="face_capture_out_of_n">out of %1$d...</string>
+    <string name="face_scan_finished">Great! We got it..</string>
+    <string name="password_is_required_to_proceed">* Password is required to proceed</string>
+    <string name="access_key_is_required">Access key is required</string>
+    <string name="hold_on_10_sensecrypt_face_detection_model_downloading_in_progress">Initialize. Please Wait</string>
+    <string name="please_scan_subject_s_face">Please Scan Subject\'s face</string>
+    <string name="place_face_within_oval">Place face within oval</string>
+    <string name="generate_senseprint">Generate SensePrint</string>
+    <string name="please_fill_required_fields">Please fill required fields</string>
+    <string name="liveness_check">Liveness check*</string>
+    <string name="welcome_back">Welcome back</string>
+    <string name="senseprint_verifier">SensePrint Verifier</string>
+    <string name="senseprint_generator">SensePrint Generator</string>
+    <string name="id_no">ID NO.</string>
+    <string name="record_id_sample">G3894354K</string>
+    <string name="view_more">View more</string>
+    <string name="view_less">View less</string>
+    <string name="please_place_qr_code_within_frame">Scan QR</string>
+    <string name="transfer_your_access_key">Transfer your access key from this device so that you can use it on another device</string>
+    <string name="version">Version %s</string>
+    <string name="ok">Ok</string>
+    <string name="screen_rotation_message">Keep your tablet\'s screen fixed in either Portrait or Landscape mode</string>
+    <string name="senseprint_qr">SensePrint QR</string>
+    <string name="please_fill_all_required_fields">Please fill all required fields</string>
+</resources>

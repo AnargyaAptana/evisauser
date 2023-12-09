@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginHorizontal="43dp"
+    style="@style/CardView"
+    android:foregroundGravity="center_horizontal"
+    android:paddingHorizontal="40dp"
+    android:layout_gravity="center_horizontal"
+    android:backgroundTint="@color/colorWhite"
+    app:cardCornerRadius="25dp"
+    app:cardPreventCornerOverlap="true"
+    app:cardElevation="5dp"
+    app:cardBackgroundColor="@color/colorWhite"
+    tools:ignore="MissingDefaultResource">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+    <TextView
+        android:id="@+id/tvTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="35dp"
+        android:layout_gravity="center_horizontal"
+        android:textColor="#90B57F"
+        android:fontFamily="@font/poppins_semi"
+        android:layout_marginHorizontal="25dp"
+        android:gravity="center"
+        android:textSize="20sp"
+        android:text="@string/success"/>
+
+    <TextView
+        android:id="@+id/tvMessage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:paddingVertical="10dp"
+        android:layout_gravity="center_horizontal"
+        android:textColor="#4676B0"
+        android:fontFamily="@font/poppins"
+        android:layout_marginHorizontal="24dp"
+        android:gravity="center"
+        android:textSize="14sp"
+        android:text="@string/qr_image_is_successfully_saved_into_gallery"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="75dp"
+        android:layout_gravity="bottom"
+        android:layout_marginBottom="16dp"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal"
+        android:padding="10dp">
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnOk"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="25dp"
+            android:layout_marginHorizontal="10dp"
+            android:background="@drawable/btn_border"
+            android:fontFamily="@font/poppins"
+            android:text="@string/ok"
+            android:textSize="16dp"
+            android:textColor="@color/colorWhite" />
+
+    </LinearLayout>
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>
+

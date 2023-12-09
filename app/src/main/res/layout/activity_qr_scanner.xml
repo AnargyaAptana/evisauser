@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/llQrScanner"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#00000000"
+   >
+
+
+    <include layout="@layout/detail_action_bar_camera"
+        android:id="@+id/tabBar"
+         />
+
+
+        <com.otaliastudios.cameraview.CameraView
+            android:layout_below="@id/tabBar"
+            android:id="@+id/qrScanner"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:keepScreenOn="true"
+            app:cameraAudio="off"
+            app:cameraFacing="back"
+            app:cameraPlaySounds="false"
+            app:cameraRequestPermissions="false"
+            />
+
+        <ai.seventhsense.faceidentificationdemo.ui.QrScannerView
+            android:id="@+id/qrScannerView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"/>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="90dp"
+            android:layout_alignParentBottom="true"
+            android:layout_gravity="bottom"
+            android:weightSum="3"
+            android:background="@drawable/suggestion_gradient"
+            android:orientation="horizontal">
+            <View
+                android:layout_width="90dp"
+                android:layout_height="90dp"
+                android:layout_weight="1" />
+            <TextView
+                android:id="@+id/tvQrInfo2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="5dp"
+                android:layout_weight="1"
+                android:fontFamily="@font/poppins"
+                android:text="@string/please_place_qr_code_within_frame"
+                android:textAlignment="center"
+                android:textColor="@color/colorWhite"
+                android:textSize="18sp" />
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/ivSwitchCamera"
+                android:layout_width="90dp"
+                android:layout_height="90dp"
+                android:background="@color/colorTransparent"
+                android:paddingTop="25dp"
+                android:layout_weight="1"
+                android:paddingBottom="15dp"
+                android:src="@drawable/switchcamera" />
+        </LinearLayout>
+
+</RelativeLayout>
