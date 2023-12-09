@@ -66,7 +66,10 @@
     <string name="select_birth_date">Date Of Birth</string>
     <string name="date_of_birth">Date Of Birth</string>
     <string name="detection_face_in_progress">Face Detection in Progress</string>
-    <string name="address">Address</string>
+    <string name="contact_detail">Contact Information</string>
+    <string name="address">Home Address</string>
+    <string name="email">Email</string>
+    <string name="phone">Phone Number</string>
     <string name="select_date_of_issue">Date Of Issue</string>
     <string name="id">Id</string>
     <string name="upper_case_id">ID</string>
@@ -99,12 +102,14 @@
     <string name="failed_to_fetch_decryption">Failed to fetch coreml decryption key</string>
     <string name="eyes_closed">Unsuitable face detected. Please open your eyes.</string>
     <string name="save_qr">Save QR</string>
-    <string name="enter_id">ID*</string>
+    <string name="enter_id">Passport Number*</string>
     <string name="enter_name">Full Name as in passport</string>
     <string name="next">Next</string>
     <string name="enter_nationality">Nationality</string>
     <string name="name">Name</string>
     <string name="sex">Sex</string>
+    <string name="marital_status_label">Marital Status</string>
+    <string name="travel_detail_label">Travel Detail</string>
     <string name="storage_err">Storage Error</string>
     <string name="server_busy">Server is busy...</string>
     <string name="scanning_qr_code">Scanning Qr code</string>
@@ -187,4 +192,9 @@
     <string name="senseprint_qr">QR</string>
     <string name="please_fill_all_required_fields">Please fill all required fields</string>
     <string name="personal_detail_fields">Personal Details</string>
+    <string-array name="travel_detail">
+        <item>Tourism</item>
+        <item>Business</item>
+        <item>Other</item>
+    </string-array>
 </resources>

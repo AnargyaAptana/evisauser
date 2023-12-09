@@ -47,7 +47,7 @@ public class GenerateQrMetaDataActivity extends SdkBaseActivity {
     // UI Components
     AppCompatButton btnNext;
     EditText etAddress, etNationality, etId, etName, etPassword, etDob, etDateOfIssue;
-    Spinner etGender, etMarital;
+    Spinner etGender, etMarital, etTravelDetail;
     TextView tvError;
     ScrollView scrollView;
 
@@ -62,7 +62,7 @@ public class GenerateQrMetaDataActivity extends SdkBaseActivity {
     private boolean isLivenessIncluded = true;
 
 
-    ImageView ivSelectGender, ivSelectDOB, ivSelectIssue;
+    ImageView ivSelectGender, ivSelectDOB, ivSelectIssue, ivTravelDetail, ivSelectMarital;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -91,6 +91,8 @@ public class GenerateQrMetaDataActivity extends SdkBaseActivity {
 
         etMarital = findViewById(R.id.etMarital);
 
+        etTravelDetail = findViewById(R.id.etTravelDetail);
+
         etPassword = findViewById(R.id.etPassword);
 
         scrollView = findViewById(R.id.layoutMetaData);
@@ -100,6 +102,10 @@ public class GenerateQrMetaDataActivity extends SdkBaseActivity {
         ivSelectGender = findViewById(R.id.ivSelectGender);
 
         ivSelectIssue = findViewById(R.id.ivSelectIssue);
+
+        ivSelectMarital = findViewById(R.id.ivSelectMarital);
+
+        ivTravelDetail = findViewById(R.id.ivTravelDetail);
 
         ivBack = findViewById(R.id.ivBack);
 
@@ -119,6 +125,8 @@ public class GenerateQrMetaDataActivity extends SdkBaseActivity {
         setUpGenderSpinner();
 
         setUpMaritalSpinner();
+
+        setUpTravelDetailSpinner();
     }
 
     /**
@@ -144,6 +152,17 @@ public class GenerateQrMetaDataActivity extends SdkBaseActivity {
         etMarital.setAdapter(spinnerArrayAdapter);
 
         etMarital.setSelection(0);
+    }
+
+    private void setUpTravelDetailSpinner(){
+        String[] dataRegion = getResources().getStringArray(R.array.travel_detail);
+
+        ArrayAdapter<String> spinnerArrayAdapter = new ArrayAdapter<String>(this, R.layout.spinner_layout, dataRegion);
+        spinnerArrayAdapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+
+        etTravelDetail.setAdapter(spinnerArrayAdapter);
+
+        etTravelDetail.setSelection(0);
     }
     /**
      * Add listeners to the UI components
@@ -286,12 +305,7 @@ public class GenerateQrMetaDataActivity extends SdkBaseActivity {
 
         // Create the request, based on password (if provided)
         SensePrintRequestWithDetectionThumbnail request;
-
-        if (etPassword.getText().length() == 0 || etPassword.getText().equals(getString(R.string.enter_password))) {
-            request = new SensePrintRequestWithDetectionThumbnail(bitmap, recordId, metaData, null, isLivenessIncluded);
-        } else {
-            request = new SensePrintRequestWithDetectionThumbnail(bitmap, recordId, metaData, etPassword.getText().toString().trim(), isLivenessIncluded);
-        }
+        request = new SensePrintRequestWithDetectionThumbnail(bitmap, recordId, metaData, null, isLivenessIncluded);
 
         // Create the SensePrint
         SenseCryptSdk.createSensePrint(GenerateQrMetaDataActivity.this, request, new SenseCryptAsyncFunctionExecutor.Callback<SensePrintResult>() {
@@ -346,39 +360,40 @@ public class GenerateQrMetaDataActivity extends SdkBaseActivity {
         String dateOfIssue = etDateOfIssue.getText().toString();
         String nationality = etNationality.getText().toString();
         String sex = etGender.getSelectedItem().toString();
-
+        String maritalStatus = etMarital.getSelectedItem().toString();
+        String travelDetail = etTravelDetail.getSelectedItem().toString();
 
         metaData.put(getString(R.string.id), recordId);
 
-
         if (address.length() != 0) {
             metaData.put(getString(R.string.address), address);
-
         }
 
         if (name.length() != 0 && !name.equals("Name")) {
             metaData.put(getString(R.string.name), name);
-
         }
 
         if (sex.length() != 0 && !sex.equals(getString(R.string.gender))) {
             metaData.put(getString(R.string.sex), sex);
-
         }
 
         if (dob.length() != 0 && !dob.equals(getString(R.string.select_birth_date))) {
             metaData.put(getString(R.string.date_of_birth), dob);
-
         }
 
         if (dateOfIssue.length() != 0 && !dateOfIssue.equals(getString(R.string.select_date_of_issue))) {
             metaData.put(getString(R.string.date_of_issue), dateOfIssue);
-
         }
 
         if (nationality.length() != 0 && !nationality.equals(getString(R.string.enter_nationality))) {
             metaData.put(getString(R.string.nationality), nationality);
+        }
 
+        if (maritalStatus.length() != 0) {
+            metaData.put(getString(R.string.marital_status_label), maritalStatus);
+        }
+        if (travelDetail.length() != 0) {
+            metaData.put(getString(R.string.travel_detail_label), travelDetail);
         }
 
         return metaData;

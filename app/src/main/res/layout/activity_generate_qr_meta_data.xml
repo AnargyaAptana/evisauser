@@ -114,40 +114,14 @@
                     android:layout_marginBottom="20dp"
                     android:orientation="vertical"/>
 
-
-                <com.google.android.material.textfield.TextInputLayout
-                    style="@style/MyTextInputLayoutStyle"
-                    android:layout_width="match_parent"
-                    android:layout_height="65dp"
-                    android:layout_marginTop="5dp"
-                    android:paddingBottom="10dp"
-                    app:endIconMode="custom"
-                    app:endIconTint="@color/colorWhite"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toTopOf="parent">
-
-                    <com.google.android.material.textfield.TextInputEditText
-                        android:id="@+id/etName"
+                    <TextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:background="@drawable/edit_background"
                         android:fontFamily="@font/poppins_medium"
-                        android:hint="@string/enter_name"
-                        android:importantForAutofill="no"
-                        android:singleLine="true"
-                        android:textColor="#fff"
-                        android:textColorHint="#fff"
+                        android:text="@string/personal_detail_fields"
+                        android:textColor="@color/colorWhite"
                         android:textSize="14sp" />
-                </com.google.android.material.textfield.TextInputLayout>
-
-
-                <RelativeLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content">
-
                     <com.google.android.material.textfield.TextInputLayout
-
                         style="@style/MyTextInputLayoutStyle"
                         android:layout_width="match_parent"
                         android:layout_height="65dp"
@@ -160,91 +134,121 @@
                         app:layout_constraintTop_toTopOf="parent">
 
                         <com.google.android.material.textfield.TextInputEditText
-                            android:id="@+id/etDOB"
+                            android:id="@+id/etName"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:background="@drawable/edit_background"
                             android:fontFamily="@font/poppins_medium"
-                            android:hint="@string/date_of_birth"
+                            android:hint="@string/enter_name"
                             android:importantForAutofill="no"
                             android:singleLine="true"
-                            android:cursorVisible="false"
                             android:textColor="#fff"
                             android:textColorHint="#fff"
                             android:textSize="14sp" />
                     </com.google.android.material.textfield.TextInputLayout>
-
-                    <ImageView
-                        android:id="@+id/ivSelectDOB"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_alignParentRight="true"
-                        android:layout_centerInParent="true"
-                        android:paddingRight="8dp"
-                        android:paddingBottom="8dp"
-                        android:src="@drawable/baseline_keyboard_arrow_down_24" />
-                </RelativeLayout>
-                <RelativeLayout
-                    android:layout_marginTop="5dp"
-                    android:paddingBottom="10dp"
-                    android:layout_width="match_parent"
-                    android:layout_height="52dp"
-                    android:layout_marginBottom="10dp"
-                    android:background="@drawable/edit_background">
-
-                    <Spinner
-                        android:id="@+id/etGender"
+                    <RelativeLayout
                         android:layout_width="match_parent"
-                        android:layout_height="50dp"
-                        android:background="@null"
-                        android:fontFamily="@font/poppins_medium"
-                        android:paddingLeft="6dp"
-                        android:paddingTop="10dp"
-                        android:popupBackground="@drawable/spinner_background"
-                        android:textColor="#FFFFFF"
-                        android:textSize="14sp"
-                        android:theme="@style/spinnerTheme"
-                        />
-                    <ImageView
-                        android:id="@+id/ivSelectGender"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_alignParentRight="true"
-                        android:layout_centerInParent="true"
-                        android:paddingRight="8dp"
-                        android:src="@drawable/baseline_keyboard_arrow_down_24" />
-                </RelativeLayout>
-                <RelativeLayout
-                    android:layout_marginTop="5dp"
-                    android:paddingBottom="10dp"
-                    android:layout_width="match_parent"
-                    android:layout_height="52dp"
-                    android:layout_marginBottom="10dp"
-                    android:background="@drawable/edit_background">
+                        android:layout_height="wrap_content">
 
-                    <Spinner
-                        android:id="@+id/etMarital"
+                        <com.google.android.material.textfield.TextInputLayout
+
+                            style="@style/MyTextInputLayoutStyle"
+                            android:layout_width="match_parent"
+                            android:layout_height="65dp"
+                            android:layout_marginTop="5dp"
+                            android:paddingBottom="10dp"
+                            app:endIconMode="custom"
+                            app:endIconTint="@color/colorWhite"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent">
+
+                            <com.google.android.material.textfield.TextInputEditText
+                                android:id="@+id/etDOB"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@drawable/edit_background"
+                                android:fontFamily="@font/poppins_medium"
+                                android:hint="@string/date_of_birth"
+                                android:importantForAutofill="no"
+                                android:singleLine="true"
+                                android:cursorVisible="false"
+                                android:textColor="#fff"
+                                android:textColorHint="#fff"
+                                android:textSize="14sp" />
+                        </com.google.android.material.textfield.TextInputLayout>
+
+                        <ImageView
+                            android:id="@+id/ivSelectDOB"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerInParent="true"
+                            android:paddingRight="8dp"
+                            android:paddingBottom="8dp"
+                            android:src="@drawable/baseline_keyboard_arrow_down_24" />
+                    </RelativeLayout>
+                    <RelativeLayout
+                        android:layout_marginTop="5dp"
+                        android:paddingBottom="10dp"
                         android:layout_width="match_parent"
-                        android:layout_height="50dp"
-                        android:background="@null"
-                        android:fontFamily="@font/poppins_medium"
-                        android:paddingLeft="6dp"
-                        android:paddingTop="10dp"
-                        android:popupBackground="@drawable/spinner_background"
-                        android:textColor="#FFFFFF"
-                        android:textSize="14sp"
-                        android:theme="@style/spinnerTheme"
-                        />
+                        android:layout_height="52dp"
+                        android:layout_marginBottom="10dp"
+                        android:background="@drawable/edit_background">
 
-                    <ImageView
-                        android:id="@+id/ivSelectMarital"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_alignParentRight="true"
-                        android:layout_centerInParent="true"
-                        android:paddingRight="8dp"
-                        android:src="@drawable/baseline_keyboard_arrow_down_24" />
-                </RelativeLayout>
+                        <Spinner
+                            android:id="@+id/etGender"
+                            android:layout_width="match_parent"
+                            android:layout_height="50dp"
+                            android:background="@null"
+                            android:fontFamily="@font/poppins_medium"
+                            android:paddingLeft="6dp"
+                            android:paddingTop="10dp"
+                            android:popupBackground="@drawable/spinner_background"
+                            android:textColor="#FFFFFF"
+                            android:textSize="14sp"
+                            android:theme="@style/spinnerTheme"
+                            />
+                        <ImageView
+                            android:id="@+id/ivSelectGender"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerInParent="true"
+                            android:paddingRight="8dp"
+                            android:src="@drawable/baseline_keyboard_arrow_down_24" />
+                    </RelativeLayout>
+                    <RelativeLayout
+                        android:layout_marginTop="5dp"
+                        android:paddingBottom="10dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="52dp"
+                        android:layout_marginBottom="10dp"
+                        android:background="@drawable/edit_background">
+
+                        <Spinner
+                            android:id="@+id/etMarital"
+                            android:layout_width="match_parent"
+                            android:layout_height="50dp"
+                            android:background="@null"
+                            android:fontFamily="@font/poppins_medium"
+                            android:paddingLeft="6dp"
+                            android:paddingTop="10dp"
+                            android:popupBackground="@drawable/spinner_background"
+                            android:textColor="#FFFFFF"
+                            android:textSize="14sp"
+                            android:theme="@style/spinnerTheme"
+                            />
+
+                        <ImageView
+                            android:id="@+id/ivSelectMarital"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerInParent="true"
+                            android:paddingRight="8dp"
+                            android:src="@drawable/baseline_keyboard_arrow_down_24" />
+                    </RelativeLayout>
 
                 <com.google.android.material.textfield.TextInputLayout
                     style="@style/MyTextInputLayoutStyle"
@@ -271,7 +275,65 @@
                         android:textColorHint="#fff"
                         android:textSize="14sp" />
                 </com.google.android.material.textfield.TextInputLayout>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/poppins_medium"
+                    android:text="@string/contact_detail"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="14sp" />
+                <com.google.android.material.textfield.TextInputLayout
+                    style="@style/MyTextInputLayoutStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="65dp"
+                    android:layout_marginTop="5dp"
+                    android:paddingBottom="10dp"
+                    app:endIconMode="custom"
+                    app:endIconTint="@color/colorWhite"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
 
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/etEmail"
+                        style="@style/MyTextInputLayoutStyle"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/edit_background"
+                        android:fontFamily="@font/poppins_medium"
+                        android:hint="@string/email"
+                        android:importantForAutofill="no"
+                        android:singleLine="true"
+                        android:textColor="#FFFFFF"
+                        android:textColorHint="#fff"
+                        android:textSize="14sp" />
+                </com.google.android.material.textfield.TextInputLayout>
+                <com.google.android.material.textfield.TextInputLayout
+                    style="@style/MyTextInputLayoutStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="65dp"
+                    android:layout_marginTop="5dp"
+                    android:paddingBottom="10dp"
+                    app:endIconMode="custom"
+                    app:endIconTint="@color/colorWhite"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/etPhone"
+                        style="@style/MyTextInputLayoutStyle"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/edit_background"
+                        android:fontFamily="@font/poppins_medium"
+                        android:hint="@string/phone"
+                        android:importantForAutofill="no"
+                        android:singleLine="true"
+                        android:textColor="#FFFFFF"
+                        android:textColorHint="#fff"
+                        android:textSize="14sp" />
+                </com.google.android.material.textfield.TextInputLayout>
 
                 <com.google.android.material.textfield.TextInputLayout
                     style="@style/MyTextInputLayoutStyle"
@@ -300,7 +362,36 @@
                         android:textSize="14sp" />
                 </com.google.android.material.textfield.TextInputLayout>
 
+                <RelativeLayout
+                    android:layout_marginTop="5dp"
+                    android:paddingBottom="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="52dp"
+                    android:layout_marginBottom="10dp"
+                    android:background="@drawable/edit_background">
 
+                    <Spinner
+                        android:id="@+id/etTravelDetail"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:background="@null"
+                        android:fontFamily="@font/poppins_medium"
+                        android:paddingLeft="6dp"
+                        android:paddingTop="10dp"
+                        android:popupBackground="@drawable/spinner_background"
+                        android:textColor="#FFFFFF"
+                        android:textSize="14sp"
+                        android:theme="@style/spinnerTheme"
+                        />
+                    <ImageView
+                        android:id="@+id/ivTravelDetail"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerInParent="true"
+                        android:paddingRight="8dp"
+                        android:src="@drawable/baseline_keyboard_arrow_down_24" />
+                </RelativeLayout>
                 <RelativeLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content">
