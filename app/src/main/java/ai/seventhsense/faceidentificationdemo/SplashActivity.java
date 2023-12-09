@@ -52,11 +52,6 @@ public class SplashActivity extends AppCompatActivity {
         computeWindowSizeClasses();
 
 
-        tvVersion = findViewById(R.id.tvVersion);
-
-        // Set the version name
-        tvVersion.setText(getString(R.string.version, getVersionName(this)));
-
         getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN,
                 WindowManager.LayoutParams.FLAG_FULLSCREEN);
 

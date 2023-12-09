@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <layer-list xmlns:android="http://schemas.android.com/apk/res/android">
     <item android:drawable="@drawable/background_im"  />
-    <item android:drawable="@drawable/IM_logo"  android:width="200dp" android:height="200dp" android:gravity="center_vertical|center_horizontal"/>
+    <item android:drawable="@drawable/im_logo"  android:width="200dp" android:height="200dp" android:gravity="center_vertical|center_horizontal"/>
 </layer-list>

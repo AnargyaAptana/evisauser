@@ -12,12 +12,12 @@
     <string name="unexpected_error">Unexpected Error</string>
     <string name="unexpected_detail">An unexpected error occurred. Please retry the operation later.</string>
     *
-    <string name="sensecrypt_fd_model">SenseCrypt Face Detection Model downloading in progress.</string>
+    <string name="sensecrypt_fd_model"> Face Detection Model downloading in progress.</string>
     *
-    <string name="sensecrypt_fr_model">SenseCrypt Face Recognition Model downloading in progress.</string>
+    <string name="sensecrypt_fr_model">Face Recognition Model downloading in progress.</string>
     <string name="invalid_key">Invalid Key</string>
-    <string name="senseprint_not_match_with_password">Provided password or face do not match with SensePrint.</string>
-    <string name="senseprint_not_match_without_password">Provided face does not match with SensePrint.</string>
+    <string name="senseprint_not_match_with_password">Provided password or face do not match .</string>
+    <string name="senseprint_not_match_without_password">Provided face does not match .</string>
     <string name="acess_key_in_use">Access Key in use</string>
     <string name="activating_access_key">Activating Access Key</string>
     <string name="invalid_key_detail">Access key provided is invalid. Please try again. </string>
@@ -100,7 +100,7 @@
     <string name="eyes_closed">Unsuitable face detected. Please open your eyes.</string>
     <string name="save_qr">Save QR</string>
     <string name="enter_id">ID*</string>
-    <string name="enter_name">Name</string>
+    <string name="enter_name">Full Name as in passport</string>
     <string name="next">Next</string>
     <string name="enter_nationality">Nationality</string>
     <string name="name">Name</string>
@@ -130,6 +130,11 @@
         <item>Gender</item>
         <item>Female</item>
         <item>Male</item>
+    </string-array>
+    <string-array name="marital_status">
+        <item>Single</item>
+        <item>Married</item>
+        <item>Divorced</item>
     </string-array>
     <string name="liveness_failed_title">Liveness Check Failed</string>
     <string name="liveness_failed">Unsuitable face detected. Please ensure an authentic and clear face scan.</string>
@@ -164,12 +169,12 @@
     <string name="hold_on_10_sensecrypt_face_detection_model_downloading_in_progress">Initialize. Please Wait</string>
     <string name="please_scan_subject_s_face">Please Scan Subject\'s face</string>
     <string name="place_face_within_oval">Place face within oval</string>
-    <string name="generate_senseprint">Generate SensePrint</string>
+    <string name="generate_senseprint">Generate QR</string>
     <string name="please_fill_required_fields">Please fill required fields</string>
     <string name="liveness_check">Liveness check*</string>
-    <string name="welcome_back">Welcome back</string>
-    <string name="senseprint_verifier">SensePrint Verifier</string>
-    <string name="senseprint_generator">SensePrint Generator</string>
+    <string name="welcome_back">Welcome </string>
+    <string name="senseprint_verifier">QR Verifier</string>
+    <string name="senseprint_generator">Create E-Visa</string>
     <string name="id_no">ID NO.</string>
     <string name="record_id_sample">G3894354K</string>
     <string name="view_more">View more</string>
@@ -179,6 +184,7 @@
     <string name="version">Version %s</string>
     <string name="ok">Ok</string>
     <string name="screen_rotation_message">Keep your tablet\'s screen fixed in either Portrait or Landscape mode</string>
-    <string name="senseprint_qr">SensePrint QR</string>
+    <string name="senseprint_qr">QR</string>
     <string name="please_fill_all_required_fields">Please fill all required fields</string>
+    <string name="personal_detail_fields">Personal Details</string>
 </resources>

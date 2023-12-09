@@ -1,15 +1,10 @@
 package ai.seventhsense.faceidentificationdemo;
 
-import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.content.pm.ActivityInfo;
 import android.os.Bundle;
-import android.os.Handler;
 import android.view.View;
-import android.widget.LinearLayout;
-import android.widget.RelativeLayout;
 
-import androidx.appcompat.widget.AppCompatImageButton;
 import androidx.cardview.widget.CardView;
 import androidx.window.layout.WindowMetrics;
 import androidx.window.layout.WindowMetricsCalculator;
@@ -27,9 +22,7 @@ import ai.seventhsense.sensecryptsdk.SenseCryptSdk;
  */
 public class MainActivity extends SdkBaseActivity {
     // UI Components
-    CardView btnSmartScan;
     CardView btnGenerateQr;
-    AppCompatImageButton btnSetting;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -51,36 +44,6 @@ public class MainActivity extends SdkBaseActivity {
      * Sets up the listeners for the UI components
      */
     private void setUpListener() {
-        btnSetting.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                btnSetting.setClickable(false);
-
-                Intent intent = new Intent(MainActivity.this, SettingActivity.class);
-                startActivity(intent);
-            }
-        });
-
-        btnSmartScan.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-
-
-                Intent intent = new Intent(MainActivity.this, QrScannerActivity.class);
-                startActivity(intent);
-
-                btnSmartScan.setClickable(false);
-                btnSmartScan.postDelayed(new Runnable() {
-                    @Override
-                    public void run() {
-                        btnSmartScan.setClickable(true);
-
-                    }
-                }, 500);
-
-
-            }
-        });
 
         btnGenerateQr.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -95,7 +58,6 @@ public class MainActivity extends SdkBaseActivity {
                     @Override
                     public void run() {
                         btnGenerateQr.setClickable(true);
-
                     }
                 }, 500);
 
@@ -108,11 +70,9 @@ public class MainActivity extends SdkBaseActivity {
      * Sets up the UI components
      */
     private void setUpComponents() {
-        btnSmartScan = findViewById(R.id.btnSmartScan);
 
         btnGenerateQr = findViewById(R.id.btnGenerateQr);
 
-        btnSetting = findViewById(R.id.btnSetting);
     }
 
     /**
@@ -128,11 +88,7 @@ public class MainActivity extends SdkBaseActivity {
     protected void onResume() {
         super.onResume();
 
-        btnSmartScan.setClickable(true);
-
         btnGenerateQr.setClickable(true);
-
-        btnSetting.setClickable(true);
 
         // Pre-load the SDK, if lazy loading is desired, this can be removed
         SenseCryptSdk.initialize(this);

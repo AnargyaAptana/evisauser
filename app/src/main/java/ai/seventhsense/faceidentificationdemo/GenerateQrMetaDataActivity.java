@@ -47,7 +47,7 @@ public class GenerateQrMetaDataActivity extends SdkBaseActivity {
     // UI Components
     AppCompatButton btnNext;
     EditText etAddress, etNationality, etId, etName, etPassword, etDob, etDateOfIssue;
-    Spinner etGender;
+    Spinner etGender, etMarital;
     TextView tvError;
     ScrollView scrollView;
 
@@ -75,6 +75,7 @@ public class GenerateQrMetaDataActivity extends SdkBaseActivity {
 
         // Add listeners to the UI components
         setUpListeners();
+        isLivenessIncluded = true;
     }
 
     public void setUpComponents() {
@@ -87,6 +88,8 @@ public class GenerateQrMetaDataActivity extends SdkBaseActivity {
         etDob = findViewById(R.id.etDOB);
 
         etGender = findViewById(R.id.etGender);
+
+        etMarital = findViewById(R.id.etMarital);
 
         etPassword = findViewById(R.id.etPassword);
 
@@ -114,6 +117,8 @@ public class GenerateQrMetaDataActivity extends SdkBaseActivity {
 
         // More initialization for the spinner
         setUpGenderSpinner();
+
+        setUpMaritalSpinner();
     }
 
     /**
@@ -130,6 +135,16 @@ public class GenerateQrMetaDataActivity extends SdkBaseActivity {
         etGender.setSelection(0);
     }
 
+    private void setUpMaritalSpinner(){
+        String[] dataRegion = getResources().getStringArray(R.array.marital_status);
+
+        ArrayAdapter<String> spinnerArrayAdapter = new ArrayAdapter<String>(this, R.layout.spinner_layout, dataRegion);
+        spinnerArrayAdapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+
+        etMarital.setAdapter(spinnerArrayAdapter);
+
+        etMarital.setSelection(0);
+    }
     /**
      * Add listeners to the UI components
      */
@@ -162,30 +177,6 @@ public class GenerateQrMetaDataActivity extends SdkBaseActivity {
                 }
             }
         });
-
-        btnLivenessYes.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                isLivenessIncluded = true;
-
-                btnLivenessNo.setBackgroundDrawable(getDrawable(R.drawable.btn_liveness));
-
-                btnLivenessYes.setBackgroundDrawable(getDrawable(R.drawable.btn_liveness_selected));
-            }
-        });
-
-        btnLivenessNo.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-
-                isLivenessIncluded = false;
-
-                btnLivenessNo.setBackgroundDrawable(getDrawable(R.drawable.btn_liveness_not_selected));
-
-                btnLivenessYes.setBackgroundDrawable(getDrawable(R.drawable.btn_liveness));
-            }
-        });
-
 
         scrollView.setOnTouchListener(new View.OnTouchListener() {
             private float startY;
@@ -438,10 +429,6 @@ public class GenerateQrMetaDataActivity extends SdkBaseActivity {
         super.onResume();
 
         isLivenessIncluded = true;
-
-        btnLivenessNo.setBackgroundDrawable(getDrawable(R.drawable.btn_liveness));
-
-        btnLivenessYes.setBackgroundDrawable(getDrawable(R.drawable.btn_liveness_selected));
     }
 
     /**

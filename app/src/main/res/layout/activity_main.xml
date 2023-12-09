@@ -3,7 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/sensecryptlogin"
+    android:background="@drawable/background_im"
     android:fillViewport="true">
 
     <RelativeLayout
@@ -20,16 +20,6 @@
             android:orientation="vertical"
             android:visibility="visible">
 
-
-            <androidx.appcompat.widget.AppCompatImageButton
-                android:id="@+id/btnSetting"
-                android:layout_width="40dp"
-                android:layout_height="30dp"
-                android:layout_gravity="right"
-                android:layout_marginTop="18dp"
-                android:layout_marginRight="8dp"
-                android:background="?android:selectableItemBackground"
-                android:src="@drawable/baseline_settings_24" />
 
             <View
                 android:layout_width="match_parent"
@@ -55,43 +45,6 @@
                 android:layout_gravity="center"
                 android:orientation="vertical">
 
-
-                <androidx.cardview.widget.CardView
-                    android:id="@+id/btnSmartScan"
-                    android:layout_width="200dp"
-                    android:layout_height="190dp"
-                    android:layout_gravity="center"
-                    android:layout_margin="16dp"
-                    app:cardBackgroundColor="#B364A0CB"
-                    app:cardCornerRadius="12dp"
-                    app:cardElevation="0dp"
-                    app:cardUseCompatPadding="true">
-
-                    <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:orientation="vertical">
-
-                        <ImageView
-                            android:layout_width="54dp"
-                            android:layout_height="68dp"
-                            android:layout_gravity="center"
-                            android:layout_marginTop="20dp"
-                            android:scaleType="fitXY"
-                            android:src="@drawable/smart_scan" />
-
-                        <TextView
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:layout_marginVertical="10dp"
-                            android:fontFamily="@font/poppins_medium"
-                            android:paddingHorizontal="12dp"
-                            android:text="@string/senseprint_verifier"
-                            android:textAlignment="center"
-                            android:textColor="#fff"
-                            android:textSize="20sp" />
-                    </LinearLayout>
-                </androidx.cardview.widget.CardView>
 
                 <androidx.cardview.widget.CardView
                     android:id="@+id/btnGenerateQr"

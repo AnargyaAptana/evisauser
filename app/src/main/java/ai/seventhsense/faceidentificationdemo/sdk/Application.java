@@ -1,15 +1,6 @@
 package ai.seventhsense.faceidentificationdemo.sdk;
 
-import android.content.pm.ActivityInfo;
-
-import androidx.window.layout.WindowMetrics;
-import androidx.window.layout.WindowMetricsCalculator;
-
-import ai.seventhsense.faceidentificationdemo.BaseActivity;
 import ai.seventhsense.faceidentificationdemo.MainActivity;
-import ai.seventhsense.faceidentificationdemo.R;
-import ai.seventhsense.faceidentificationdemo.SplashActivity;
-import ai.seventhsense.faceidentificationdemo.utils.KeyValueStore;
 import ai.seventhsense.sensecryptsdk.SenseCryptActivityStateManager;
 import ai.seventhsense.sensecryptsdk.SenseCryptSdk;
 
