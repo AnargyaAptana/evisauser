@@ -1,4 +1,4 @@
-package ai.seventhsense.faceidentificationdemo;
+package ai.seventhsense.evisauser;
 
 import android.content.Intent;
 import android.graphics.Bitmap;
@@ -20,9 +20,9 @@ import java.util.Iterator;
 import java.util.Map;
 import java.util.TreeMap;
 
-import ai.seventhsense.faceidentificationdemo.utils.Constants;
-import ai.seventhsense.faceidentificationdemo.utils.KeyValueStore;
-import ai.seventhsense.faceidentificationdemo.utils.Util;
+import ai.seventhsense.evisauser.utils.Constants;
+import ai.seventhsense.evisauser.utils.KeyValueStore;
+import ai.seventhsense.evisauser.utils.Util;
 
 /**
  * The activity to show the details of the person

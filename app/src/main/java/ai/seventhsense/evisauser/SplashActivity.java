@@ -1,4 +1,4 @@
-package ai.seventhsense.faceidentificationdemo;
+package ai.seventhsense.evisauser;
 
 import android.content.Context;
 import android.content.Intent;
@@ -7,8 +7,6 @@ import android.content.pm.PackageInfo;
 import android.content.pm.PackageManager;
 import android.os.Bundle;
 import android.os.Handler;
-import android.os.Looper;
-import android.util.Log;
 import android.view.WindowManager;
 import android.widget.TextView;
 
@@ -16,9 +14,8 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.window.layout.WindowMetrics;
 import androidx.window.layout.WindowMetricsCalculator;
 
-import ai.seventhsense.faceidentificationdemo.utils.Constants;
-import ai.seventhsense.faceidentificationdemo.utils.KeyValueStore;
-import ai.seventhsense.faceidentificationdemo.utils.Util;
+import ai.seventhsense.evisauser.utils.Constants;
+import ai.seventhsense.evisauser.utils.KeyValueStore;
 
 /**
  * A simple activity to show the splash screen

@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:id="@+id/llSplash"
     android:orientation="vertical"
-    tools:context="ai.seventhsense.faceidentificationdemo.SplashActivity">
+    tools:context="ai.seventhsense.evisauser.SplashActivity">
 
 
     <RelativeLayout

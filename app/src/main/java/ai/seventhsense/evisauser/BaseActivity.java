@@ -1,20 +1,12 @@
-package ai.seventhsense.faceidentificationdemo;
+package ai.seventhsense.evisauser;
 
-import android.annotation.SuppressLint;
 import android.app.Dialog;
-import android.content.ContentResolver;
-import android.content.ContentValues;
-import android.content.Context;
 import android.content.DialogInterface;
 import android.content.Intent;
-import android.content.pm.ActivityInfo;
 import android.graphics.Color;
 import android.graphics.drawable.ColorDrawable;
-import android.media.AudioManager;
-import android.net.Uri;
 import android.os.Bundle;
 import android.os.Handler;
-import android.provider.MediaStore;
 import android.util.DisplayMetrics;
 import android.util.Log;
 import android.view.Gravity;
@@ -37,8 +29,8 @@ import androidx.window.layout.WindowMetricsCalculator;
 
 import com.google.android.material.snackbar.Snackbar;
 
-import ai.seventhsense.faceidentificationdemo.utils.Constants;
-import ai.seventhsense.faceidentificationdemo.utils.KeyValueStore;
+import ai.seventhsense.evisauser.utils.Constants;
+import ai.seventhsense.evisauser.utils.KeyValueStore;
 
 /**
  * This is the base activity for all the activities in the app.

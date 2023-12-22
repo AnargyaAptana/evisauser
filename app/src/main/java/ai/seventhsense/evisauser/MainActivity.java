@@ -1,4 +1,4 @@
-package ai.seventhsense.faceidentificationdemo;
+package ai.seventhsense.evisauser;
 
 import android.content.Intent;
 import android.content.pm.ActivityInfo;
@@ -9,9 +9,9 @@ import androidx.cardview.widget.CardView;
 import androidx.window.layout.WindowMetrics;
 import androidx.window.layout.WindowMetricsCalculator;
 
-import ai.seventhsense.faceidentificationdemo.sdk.SdkBaseActivity;
-import ai.seventhsense.faceidentificationdemo.utils.Constants;
-import ai.seventhsense.faceidentificationdemo.utils.KeyValueStore;
+import ai.seventhsense.evisauser.sdk.SdkBaseActivity;
+import ai.seventhsense.evisauser.utils.Constants;
+import ai.seventhsense.evisauser.utils.KeyValueStore;
 import ai.seventhsense.sensecryptsdk.SenseCryptSdk;
 
 /**

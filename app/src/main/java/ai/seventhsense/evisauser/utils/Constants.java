@@ -1,4 +1,4 @@
-package ai.seventhsense.faceidentificationdemo.utils;
+package ai.seventhsense.evisauser.utils;
 
 /**
  * Constants class

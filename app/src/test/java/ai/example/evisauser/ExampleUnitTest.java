@@ -1,4 +1,4 @@
-package ai.example.faceidentificationdemo;
+package ai.example.evisauser;
 
 import static org.junit.Assert.assertEquals;
 

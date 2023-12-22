@@ -1,4 +1,4 @@
-package ai.seventhsense.faceidentificationdemo;
+package ai.seventhsense.evisauser;
 
 import android.annotation.SuppressLint;
 import android.graphics.Bitmap;
@@ -15,9 +15,9 @@ import androidx.window.layout.WindowMetricsCalculator;
 
 import java.io.IOException;
 
-import ai.seventhsense.faceidentificationdemo.ui.GalleryHelper;
-import ai.seventhsense.faceidentificationdemo.utils.Constants;
-import ai.seventhsense.faceidentificationdemo.utils.KeyValueStore;
+import ai.seventhsense.evisauser.ui.GalleryHelper;
+import ai.seventhsense.evisauser.utils.Constants;
+import ai.seventhsense.evisauser.utils.KeyValueStore;
 
 /**
  * The activity to show the QR code and save it to the gallery

@@ -1,12 +1,12 @@
-package ai.seventhsense.faceidentificationdemo.sdk;
+package ai.seventhsense.evisauser.sdk;
 
 
 import android.app.Activity;
 import android.content.Context;
 import android.view.View;
 
-import ai.seventhsense.faceidentificationdemo.BaseActivity;
-import ai.seventhsense.faceidentificationdemo.R;
+import ai.seventhsense.evisauser.BaseActivity;
+import ai.seventhsense.evisauser.R;
 import ai.seventhsense.sensecryptsdk.ISenseCryptSdkActivity;
 import ai.seventhsense.sensecryptsdk.SenseCryptActivityStateManager;
 import ai.seventhsense.sensecryptsdk.SenseCryptSdk;

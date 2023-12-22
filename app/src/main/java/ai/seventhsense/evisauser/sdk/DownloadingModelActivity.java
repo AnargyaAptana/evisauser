@@ -1,4 +1,4 @@
-package ai.seventhsense.faceidentificationdemo.sdk;
+package ai.seventhsense.evisauser.sdk;
 
 
 import android.app.Activity;
@@ -17,11 +17,10 @@ import androidx.constraintlayout.widget.ConstraintLayout;
 import androidx.window.layout.WindowMetrics;
 import androidx.window.layout.WindowMetricsCalculator;
 
-import ai.seventhsense.faceidentificationdemo.BaseActivity;
-import ai.seventhsense.faceidentificationdemo.MainActivity;
-import ai.seventhsense.faceidentificationdemo.R;
-import ai.seventhsense.faceidentificationdemo.utils.Constants;
-import ai.seventhsense.faceidentificationdemo.utils.KeyValueStore;
+import ai.seventhsense.evisauser.BaseActivity;
+import ai.seventhsense.evisauser.R;
+import ai.seventhsense.evisauser.utils.Constants;
+import ai.seventhsense.evisauser.utils.KeyValueStore;
 import ai.seventhsense.sensecryptsdk.ISenseCryptActivationActivity;
 import ai.seventhsense.sensecryptsdk.SenseCryptActivationFailureReason;
 import ai.seventhsense.sensecryptsdk.SenseCryptActivityStateManager;

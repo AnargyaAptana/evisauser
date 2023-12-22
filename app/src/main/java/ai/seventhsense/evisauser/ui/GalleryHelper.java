@@ -1,4 +1,4 @@
-package ai.seventhsense.faceidentificationdemo.ui;
+package ai.seventhsense.evisauser.ui;
 
 import android.content.ContentUris;
 import android.content.ContentValues;
@@ -14,8 +14,8 @@ import java.io.IOException;
 import java.io.OutputStream;
 import java.text.SimpleDateFormat;
 
-import ai.seventhsense.faceidentificationdemo.utils.KeyValueStore;
-import ai.seventhsense.faceidentificationdemo.R;
+import ai.seventhsense.evisauser.utils.KeyValueStore;
+import ai.seventhsense.evisauser.R;
 
 /**
  * Helper class to save images to the gallery

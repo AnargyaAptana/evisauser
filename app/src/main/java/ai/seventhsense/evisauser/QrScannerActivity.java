@@ -1,4 +1,4 @@
-package ai.seventhsense.faceidentificationdemo;
+package ai.seventhsense.evisauser;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.widget.AppCompatButton;
@@ -33,11 +33,11 @@ import com.otaliastudios.cameraview.frame.Frame;
 import com.otaliastudios.cameraview.frame.FrameProcessor;
 import com.zxingcpp.BarcodeReader;
 
-import ai.seventhsense.faceidentificationdemo.sdk.SdkBaseActivity;
-import ai.seventhsense.faceidentificationdemo.ui.QrScannerView;
-import ai.seventhsense.faceidentificationdemo.utils.Constants;
-import ai.seventhsense.faceidentificationdemo.utils.KeyValueStore;
-import ai.seventhsense.faceidentificationdemo.utils.Util;
+import ai.seventhsense.evisauser.sdk.SdkBaseActivity;
+import ai.seventhsense.evisauser.ui.QrScannerView;
+import ai.seventhsense.evisauser.utils.Constants;
+import ai.seventhsense.evisauser.utils.KeyValueStore;
+import ai.seventhsense.evisauser.utils.Util;
 import ai.seventhsense.sensecryptsdk.SenseCryptAsyncFunctionExecutor;
 import ai.seventhsense.sensecryptsdk.SenseCryptSdk;
 import ai.seventhsense.sensecryptsdk.SensePrintTypeResult;

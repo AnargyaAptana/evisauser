@@ -1,11 +1,10 @@
-package ai.seventhsense.faceidentificationdemo.sdk;
+package ai.seventhsense.evisauser.sdk;
 
 
 import android.app.Activity;
 import android.content.pm.ActivityInfo;
 import android.os.Bundle;
 import android.os.Handler;
-import android.util.Log;
 import android.view.View;
 import android.widget.EditText;
 import android.widget.TextView;
@@ -14,13 +13,10 @@ import androidx.appcompat.widget.AppCompatButton;
 import androidx.window.layout.WindowMetrics;
 import androidx.window.layout.WindowMetricsCalculator;
 
-import java.util.HashMap;
-
-import ai.seventhsense.faceidentificationdemo.BaseActivity;
-import ai.seventhsense.faceidentificationdemo.MainActivity;
-import ai.seventhsense.faceidentificationdemo.R;
-import ai.seventhsense.faceidentificationdemo.utils.Constants;
-import ai.seventhsense.faceidentificationdemo.utils.KeyValueStore;
+import ai.seventhsense.evisauser.BaseActivity;
+import ai.seventhsense.evisauser.R;
+import ai.seventhsense.evisauser.utils.Constants;
+import ai.seventhsense.evisauser.utils.KeyValueStore;
 import ai.seventhsense.sensecryptsdk.CheckKeyResult;
 import ai.seventhsense.sensecryptsdk.ISenseCryptAccessKeyActivity;
 import ai.seventhsense.sensecryptsdk.SenseCryptSdk;

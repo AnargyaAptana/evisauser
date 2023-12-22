@@ -1,17 +1,12 @@
-package ai.seventhsense.faceidentificationdemo.ui;
+package ai.seventhsense.evisauser.ui;
 
 import android.content.Context;
 import android.graphics.Canvas;
 import android.graphics.Color;
 import android.graphics.Paint;
 import android.graphics.Path;
-import android.graphics.PointF;
-import android.graphics.Rect;
-import android.graphics.RectF;
 import android.util.AttributeSet;
 import android.view.View;
-
-import com.otaliastudios.cameraview.controls.Facing;
 
 /**
  * Shows a transparent overlay with an oval hole in the middle

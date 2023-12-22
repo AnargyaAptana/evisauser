@@ -1,6 +1,6 @@
-package ai.seventhsense.faceidentificationdemo.sdk;
+package ai.seventhsense.evisauser.sdk;
 
-import ai.seventhsense.faceidentificationdemo.MainActivity;
+import ai.seventhsense.evisauser.MainActivity;
 import ai.seventhsense.sensecryptsdk.SenseCryptActivityStateManager;
 import ai.seventhsense.sensecryptsdk.SenseCryptSdk;
 

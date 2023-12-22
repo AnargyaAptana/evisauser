@@ -1,14 +1,12 @@
-package ai.seventhsense.faceidentificationdemo;
+package ai.seventhsense.evisauser;
 
 import android.content.ClipData;
 import android.content.ClipboardManager;
 import android.content.Context;
-import android.content.Intent;
 import android.content.pm.ActivityInfo;
 import android.os.Bundle;
 import android.text.SpannableString;
 import android.text.style.UnderlineSpan;
-import android.util.Log;
 import android.view.View;
 import android.widget.TextView;
 
@@ -22,9 +20,9 @@ import java.time.format.DateTimeFormatter;
 import java.time.format.FormatStyle;
 import java.util.Locale;
 
-import ai.seventhsense.faceidentificationdemo.sdk.SdkBaseActivity;
-import ai.seventhsense.faceidentificationdemo.utils.Constants;
-import ai.seventhsense.faceidentificationdemo.utils.KeyValueStore;
+import ai.seventhsense.evisauser.sdk.SdkBaseActivity;
+import ai.seventhsense.evisauser.utils.Constants;
+import ai.seventhsense.evisauser.utils.KeyValueStore;
 import ai.seventhsense.sensecryptsdk.SenseCryptAsyncFunctionExecutor;
 import ai.seventhsense.sensecryptsdk.SenseCryptLicenseInformation;
 import ai.seventhsense.sensecryptsdk.SenseCryptSdk;

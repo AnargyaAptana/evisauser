@@ -16,7 +16,7 @@
         app:cameraPlaySounds="false"
         app:cameraRequestPermissions="false"/>
 
-    <ai.seventhsense.faceidentificationdemo.ui.FaceRegionOverlay
+    <ai.seventhsense.evisauser.ui.FaceRegionOverlay
         android:id="@+id/faceRegionOverlay"
         android:layout_width="match_parent"
         android:layout_height="match_parent" />

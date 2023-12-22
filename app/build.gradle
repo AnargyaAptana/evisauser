@@ -11,11 +11,11 @@ android {
 //            keyPassword '7thSense@blk71'
 //        }
 //    }
-    namespace 'ai.anargya.evisa'
+    namespace 'ai.seventhsense.evisauser'
     compileSdk 33
 
     defaultConfig {
-        applicationId "ai.anargya.evisa"
+        applicationId "ai.seventhsense.evisauser"
         minSdk 28
         targetSdk 33
         versionCode 1027

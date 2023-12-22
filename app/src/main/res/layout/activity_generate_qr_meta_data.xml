@@ -41,7 +41,9 @@
         android:layout_height="match_parent"
         android:layout_above="@id/btnNext"
         android:layout_below="@id/tvError"
-        android:paddingBottom="10dp">
+        android:paddingBottom="10dp"
+
+        >
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -112,16 +114,24 @@
                     android:layout_height="wrap_content"
                     android:layout_marginTop="10dp"
                     android:layout_marginBottom="20dp"
-                    android:orientation="vertical"/>
+                    android:orientation="vertical"
+                    android:visibility="gone"/>
 
-                    <TextView
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:fontFamily="@font/poppins_medium"
-                        android:text="@string/personal_detail_fields"
-                        android:textColor="@color/colorWhite"
-                        android:textSize="14sp" />
-                    <com.google.android.material.textfield.TextInputLayout
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/etDOB"
+                    android:layout_width="match_parent"
+                    android:layout_height="57dp"
+                    android:background="@drawable/edit_background"
+                    android:cursorVisible="false"
+                    android:fontFamily="@font/poppins_medium"
+                    android:hint="@string/date_of_birth"
+                    android:importantForAutofill="no"
+                    android:singleLine="true"
+                    android:textColor="#fff"
+                    android:textColorHint="#fff"
+                    android:textSize="14sp" />
+
+                <com.google.android.material.textfield.TextInputLayout
                         style="@style/MyTextInputLayoutStyle"
                         android:layout_width="match_parent"
                         android:layout_height="65dp"
@@ -144,7 +154,9 @@
                             android:singleLine="true"
                             android:textColor="#fff"
                             android:textColorHint="#fff"
-                            android:textSize="14sp" />
+                            android:textSize="14sp"
+                            android:visibility="gone"
+                            />
                     </com.google.android.material.textfield.TextInputLayout>
                     <RelativeLayout
                         android:layout_width="match_parent"
@@ -163,19 +175,6 @@
                             app:layout_constraintStart_toStartOf="parent"
                             app:layout_constraintTop_toTopOf="parent">
 
-                            <com.google.android.material.textfield.TextInputEditText
-                                android:id="@+id/etDOB"
-                                android:layout_width="match_parent"
-                                android:layout_height="wrap_content"
-                                android:background="@drawable/edit_background"
-                                android:fontFamily="@font/poppins_medium"
-                                android:hint="@string/date_of_birth"
-                                android:importantForAutofill="no"
-                                android:singleLine="true"
-                                android:cursorVisible="false"
-                                android:textColor="#fff"
-                                android:textColorHint="#fff"
-                                android:textSize="14sp" />
                         </com.google.android.material.textfield.TextInputLayout>
 
                         <ImageView
@@ -186,6 +185,7 @@
                             android:layout_centerInParent="true"
                             android:paddingRight="8dp"
                             android:paddingBottom="8dp"
+                            android:visibility="gone"
                             android:src="@drawable/baseline_keyboard_arrow_down_24" />
                     </RelativeLayout>
                     <RelativeLayout
@@ -194,7 +194,8 @@
                         android:layout_width="match_parent"
                         android:layout_height="52dp"
                         android:layout_marginBottom="10dp"
-                        android:background="@drawable/edit_background">
+                        android:background="@drawable/edit_background"
+                        android:visibility="gone">
 
                         <Spinner
                             android:id="@+id/etGender"
@@ -208,6 +209,7 @@
                             android:textColor="#FFFFFF"
                             android:textSize="14sp"
                             android:theme="@style/spinnerTheme"
+
                             />
                         <ImageView
                             android:id="@+id/ivSelectGender"
@@ -216,6 +218,7 @@
                             android:layout_alignParentRight="true"
                             android:layout_centerInParent="true"
                             android:paddingRight="8dp"
+                            android:visibility="gone"
                             android:src="@drawable/baseline_keyboard_arrow_down_24" />
                     </RelativeLayout>
                     <RelativeLayout
@@ -224,7 +227,8 @@
                         android:layout_width="match_parent"
                         android:layout_height="52dp"
                         android:layout_marginBottom="10dp"
-                        android:background="@drawable/edit_background">
+                        android:background="@drawable/edit_background"
+                        android:visibility="gone">
 
                         <Spinner
                             android:id="@+id/etMarital"
@@ -260,7 +264,8 @@
                     app:endIconTint="@color/colorWhite"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toTopOf="parent">
+                    app:layout_constraintTop_toTopOf="parent"
+                    android:visibility="gone">
 
                     <com.google.android.material.textfield.TextInputEditText
                         android:id="@+id/etNationality"
@@ -281,7 +286,8 @@
                     android:fontFamily="@font/poppins_medium"
                     android:text="@string/contact_detail"
                     android:textColor="@color/colorWhite"
-                    android:textSize="14sp" />
+                    android:textSize="14sp"
+                    android:visibility="gone" />
                 <com.google.android.material.textfield.TextInputLayout
                     style="@style/MyTextInputLayoutStyle"
                     android:layout_width="match_parent"
@@ -292,7 +298,8 @@
                     app:endIconTint="@color/colorWhite"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toTopOf="parent">
+                    app:layout_constraintTop_toTopOf="parent"
+                    android:visibility="gone">
 
                     <com.google.android.material.textfield.TextInputEditText
                         android:id="@+id/etEmail"
@@ -318,7 +325,8 @@
                     app:endIconTint="@color/colorWhite"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toTopOf="parent">
+                    app:layout_constraintTop_toTopOf="parent"
+                    android:visibility="gone">
 
                     <com.google.android.material.textfield.TextInputEditText
                         android:id="@+id/etPhone"
@@ -345,7 +353,8 @@
                     app:endIconTint="@color/colorWhite"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toTopOf="parent">
+                    app:layout_constraintTop_toTopOf="parent"
+                    android:visibility="gone">
 
                     <com.google.android.material.textfield.TextInputEditText
                         android:id="@+id/etAddress"
@@ -368,7 +377,8 @@
                     android:layout_width="match_parent"
                     android:layout_height="52dp"
                     android:layout_marginBottom="10dp"
-                    android:background="@drawable/edit_background">
+                    android:background="@drawable/edit_background"
+                    android:visibility="gone">
 
                     <Spinner
                         android:id="@+id/etTravelDetail"
@@ -394,7 +404,8 @@
                 </RelativeLayout>
                 <RelativeLayout
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content">
+                    android:layout_height="wrap_content"
+                    android:visibility="gone">
 
                     <com.google.android.material.textfield.TextInputLayout
 

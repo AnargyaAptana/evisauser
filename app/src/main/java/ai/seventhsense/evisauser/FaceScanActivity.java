@@ -1,4 +1,4 @@
-package ai.seventhsense.faceidentificationdemo;
+package ai.seventhsense.evisauser;
 
 import android.Manifest;
 import android.content.Intent;
@@ -22,11 +22,11 @@ import com.otaliastudios.cameraview.controls.Facing;
 import com.otaliastudios.cameraview.frame.Frame;
 import com.otaliastudios.cameraview.frame.FrameProcessor;
 
-import ai.seventhsense.faceidentificationdemo.sdk.SdkBaseActivity;
-import ai.seventhsense.faceidentificationdemo.ui.FaceRegionOverlay;
-import ai.seventhsense.faceidentificationdemo.utils.Constants;
-import ai.seventhsense.faceidentificationdemo.utils.KeyValueStore;
-import ai.seventhsense.faceidentificationdemo.utils.Util;
+import ai.seventhsense.evisauser.sdk.SdkBaseActivity;
+import ai.seventhsense.evisauser.ui.FaceRegionOverlay;
+import ai.seventhsense.evisauser.utils.Constants;
+import ai.seventhsense.evisauser.utils.KeyValueStore;
+import ai.seventhsense.evisauser.utils.Util;
 import ai.seventhsense.sensecryptsdk.FaceQuality;
 import ai.seventhsense.sensecryptsdk.SenseCryptAsyncFunctionExecutor;
 import ai.seventhsense.sensecryptsdk.SenseCryptDetectionResult;

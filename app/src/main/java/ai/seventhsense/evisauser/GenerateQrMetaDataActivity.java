@@ -1,4 +1,4 @@
-package ai.seventhsense.faceidentificationdemo;
+package ai.seventhsense.evisauser;
 
 
 import android.annotation.SuppressLint;
@@ -24,10 +24,10 @@ import androidx.window.layout.WindowMetricsCalculator;
 import java.util.Calendar;
 import java.util.HashMap;
 
-import ai.seventhsense.faceidentificationdemo.sdk.SdkBaseActivity;
-import ai.seventhsense.faceidentificationdemo.utils.Constants;
-import ai.seventhsense.faceidentificationdemo.utils.KeyValueStore;
-import ai.seventhsense.faceidentificationdemo.utils.Util;
+import ai.seventhsense.evisauser.sdk.SdkBaseActivity;
+import ai.seventhsense.evisauser.utils.Constants;
+import ai.seventhsense.evisauser.utils.KeyValueStore;
+import ai.seventhsense.evisauser.utils.Util;
 import ai.seventhsense.sensecryptsdk.SenseCryptAsyncFunctionExecutor;
 import ai.seventhsense.sensecryptsdk.SenseCryptGenerateQRRequest;
 import ai.seventhsense.sensecryptsdk.SenseCryptSdk;
